@@ -398,7 +398,7 @@ border: 1px solid;
     margin: 0 25px;
 }
 .badge {
-    background-color: #FDDA03;
+    background-color: #f1df68;
     color: #06034D;
     font-size: 14px;
     height: 5vh;
@@ -448,4 +448,78 @@ border: 1px solid;
     font-size: 12px;
     font-weight: 500;
 }
+
+/* map-section */
+.mapSectInfo > h6 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* border: 10px; */
+    /* border-radius: 25px; */
+    padding: 50px yellow;
+}
+
+.mapSectInfo > h4 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* border: 10px; */
+    /* border-radius: 25px; */
+}
+
+.imgCont{
+    display: flex;
+    justify-content: center;
+}
+
+.blogInfo h6{
+align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.blogInfo h3{
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.imgGrid{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr; */
+    justify-content: center;
+    margin: 10px 0;
+    gap: 1px;
+    /* align-items: center; */
+}
+
+.imgboxInfoPep{
+    color: black;
+    text-transform: capitalize;
+    width: 300px;
+    font-size: 7px;
+    font-weight: 300;
+    margin-block: .5rem;
+}
+
+
+.imgboxInfoOnus{
+    color: black;
+    text-transform: capitalize;
+    width: 300px;
+    font-size: 7px;
+    font-weight: 300;
+    margin-block: .5rem;
+}
+
+.imgboxInfoGas{
+     color: black;
+    text-transform: capitalize;
+    width: 300px;
+    font-size: 7px;
+    font-weight: 300;
+    margin-block: .5rem;
+}
+
+
 
