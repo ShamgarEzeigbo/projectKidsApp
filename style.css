@@ -7,8 +7,9 @@
 nav{
     background-color: #f0f9ff;
     padding-block: 1rem;
-
-
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .innerNav{    
@@ -57,9 +58,9 @@ nav{
 
 .navIcons > button{
     width: 110px;
-    background-color: #0a0650;
+    background-color: #180ec7;
     color: #fff;
-    padding: .7rem;
+    padding: 0.5rem;
     border-radius: 20px;
     border: none;
     font-size: 10px;
@@ -75,7 +76,7 @@ nav{
 
 /* banner styling */
 .secOne{
-    padding-block: 2rem;
+    padding-top: 4rem;
 }
 .bannerWrapper {
     /* background-color: red; */
@@ -100,6 +101,11 @@ nav{
     text-transform: capitalize;
 }
 
+.bannerContent > h1 > span {
+    color: #180ec7;
+    font-weight: 500;
+}
+
 .bannerContent > p {
     margin-block: 1rem;
 }
@@ -111,7 +117,7 @@ nav{
     margin-top: 1.5rem;
 }
 
-.trackBtn > button{
+.btn_btn{
     background-color: #180ec7;
     border: none;
     color: #fff;
@@ -135,6 +141,14 @@ nav{
 @media(min-width:320px) and (max-width:500){
     .innerNav{
         width: calc(100%-40px);
+        /* flex-direction: column; */
+    }
+    .navRight{
+        display: none;
+    }
+
+    .bannerWrapper{
+        width: calc(100% - 40px);
         flex-direction: column;
     }
 
@@ -143,3 +157,295 @@ nav{
     }
 
 }
+
+/* about styling */
+.about{
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutImg{
+    /* flex: 1; */
+    /* border: 2px solid; */
+    width: 35%;
+}
+ .aboutImg > img{
+    width: 100%;
+    height: 100%;
+ }
+
+.aboutContent{
+    width: 50%;
+}
+
+.tittleBadge{
+    background-color: #f2d117;
+    width: 25%;
+    text-align: center;
+    padding: .4rem 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.aboutContent > h1{
+    color: #0a0650;
+    text-transform: capitalize;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-block: 1rem;
+}
+
+.aboutContent > p{
+    /* width: 50%; */
+    /* border: 2px solid; */
+    color: 69747a;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* about responsive code */
+@media(min-width: 320) and (max-width: 500){
+    .about{
+        flex-direction: column;
+        width: calc(100% - 40px);
+    }
+
+    .aboutContent, .aboutImg{
+        width: 100%;
+    }
+}
+
+
+
+/* tracking section */
+.trackInfo{
+    /* border: 2px solid; */
+    max-width: 350px;
+    margin: auto;
+}
+
+.trackInfo> h2{
+    text-align: center;
+}
+
+select{
+    background-color: #f0f9ff;
+    padding: .3rem .5rem;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;
+    color: #180ec7;
+    display: block;
+    width: 145px;
+    margin: 1rem auto;
+}
+ 
+.trackInfo > h5{
+    /* color: black; */
+    /* background-color: #180ec7; */
+    margin: auto;
+    /* border: 2px solid; */
+}
+
+.trackBtn >button:nth-child(2), .trackBtns > button:nth-child(3){
+background-color: transparent;
+color: #180ec7;
+border: 1px solid;
+}
+
+/* .trackCards{
+    margin-top: 2rem;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(4,1fr); */
+    /* gap: 1rem; */
+} */
+
+.card{
+    /* width: 40%; */
+    height: 40vh;
+    /* border: 2px solid red; */
+}
+
+.trackCards{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr; */
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.mainToolsInfo{
+    /* border: 2px solid; */
+    max-width: 350px;
+    margin: auto;
+}
+
+.mainToolsInfo > h5{
+    margin: auto;
+}
+
+.mainToolsInfo> h3{
+    text-align: center;
+    margin: auto;
+}
+
+.mainToolsImg{
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    
+}
+
+
+/* pricing */
+.PricingBox .priceCase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.priceCase h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.price h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0 50px;
+    color: #06034D;
+}
+.pricing-Cage {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap: 31px;
+    padding: 10px;
+}
+.plan {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    padding: 3px 3px 3px;
+    height: 70vh;
+    width: 110%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.plan h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.plan ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 2;
+}
+.plan.best-offer {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #0d1be7bf;
+    color: #fff;
+}
+.plan.best-offer h3 {
+    color: #fff;
+}
+.plan.best-offer .price {
+    color: #fff;
+}
+.price {
+    color: #06034D;
+    font-weight: bold;
+    margin: 10px;
+}
+.price del {
+    font-size: 12px;
+}
+.duration {
+    border-radius: 25px;
+    padding: 3px;
+    color: #06034D;
+    font-size: 10px;
+    margin: 20px;
+    font-weight: 500;
+    background-color: #F0F9FF;
+    margin-bottom: 25px;
+}
+.dash {
+    border: 1px solid #f0f9ff;
+    border-radius: 25px;
+    width: 80%;
+    margin: 0 25px;
+}
+.badge {
+    background-color: #FDDA03;
+    color: #06034D;
+    font-size: 14px;
+    height: 5vh;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-weight: 500;
+    top: -15px;
+    width: 100%;
+}
+.badgeA {
+    background-color: #fff;
+    height: 5vh;
+    border-radius: 10px 10px;
+}
+.boss {
+    background-color: #180EC8;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    width: 70%;
+    margin-left: 35px;
+}
+.bot {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    color: #180EC8;
+    width: 70%;
+    margin-left: 35px;
+}
+.contact-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.whas-btn {
+    padding: 10px 25px;
+    background-color: #20C464;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
