@@ -484,19 +484,22 @@ display: flex;
 }
 
 .imgGrid{
-    display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 1fr; */
     justify-content: center;
-    margin: 10px 0;
     gap: 1px;
+    max-width: 350px;
+    margin: auto;
+    border: 1px;
+    border-radius: 10px;
     /* align-items: center; */
 }
 
 .imgboxInfoPep{
     color: black;
     text-transform: capitalize;
-    width: 300px;
+    width: 200px;
     font-size: 7px;
     font-weight: 300;
     margin-block: .5rem;
@@ -506,7 +509,7 @@ display: flex;
 .imgboxInfoOnus{
     color: black;
     text-transform: capitalize;
-    width: 300px;
+    width: 200px;
     font-size: 7px;
     font-weight: 300;
     margin-block: .5rem;
@@ -515,10 +518,20 @@ display: flex;
 .imgboxInfoGas{
      color: black;
     text-transform: capitalize;
-    width: 300px;
+    width: 200px;
     font-size: 7px;
     font-weight: 300;
     margin-block: .5rem;
+}
+
+.btn{
+    color: blue;
+    display: flex;
+    align-content: center;
+    padding: 20px;
+    border: 2px;
+    border-radius: 30px;
+
 }
 
 
